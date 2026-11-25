@@ -34,7 +34,7 @@ Optical flow + range sensor ──> Flight controller (ArduPilot)
 
 ### Layer 1 — GPS-denied flight and offboard control
 
-<img align="right" src="assets/imgs/layer1.jpeg" alt="Layer 1" width="320">
+<img align="right" src="assets/imgs/layer1.jpeg" alt="Layer 1" width="420">
 
 Establish the hardware and software foundation. In simulation, connect a Python MAVLink client to ArduPilot SITL and demonstrate a controlled takeoff, hold, local movement, and landing. On the physical platform, configure optical flow and a rangefinder for indoor state estimation, then validate manual and assisted flight before attempting companion-computer control.
 
@@ -44,7 +44,7 @@ Establish the hardware and software foundation. In simulation, connect a Python 
 
 ### Layer 2 — Visual target tracking and landing
 
-<img align="right" src="assets/imgs/layer2.jpeg" alt="Layer 2" width="320">
+<img align="right" src="assets/imgs/layer2.jpeg" alt="Layer 2" width="420">
 
 Use a downward-facing camera and OpenCV to detect an ArUco marker and estimate its relative pose. Convert target-relative errors into bounded control commands, then evaluate target tracking and landing in simulation before physical trials.
 
@@ -54,7 +54,7 @@ Use a downward-facing camera and OpenCV to detect an ArUco marker and estimate i
 
 ### Layer 3 — Obstacle avoidance and mission resumption
 
-<img align="right" src="assets/imgs/layer3.jpeg" alt="Layer 3" width="320">
+<img align="right" src="assets/imgs/layer3.jpeg" alt="Layer 3" width="420">
 
 Add forward-facing depth sensing and an explicit mission state machine. When an obstacle is detected in the planned path, pause the landing approach, perform a bounded avoidance maneuver, reacquire the target, and resume only when conditions permit.
 

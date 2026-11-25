@@ -76,6 +76,7 @@ Add forward-facing depth sensing and an explicit mission state machine.<br />Whe
 Demonstrate and measure a repeatable simulated obstacle response before attempting controlled physical tests.
 
 <br clear="right"/>
+<br />
 
 A learned object detector in place of fiducial markers is a possible later extension, not a prerequisite for the core project.
 

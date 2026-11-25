@@ -42,7 +42,11 @@ Optical flow + range sensor ──> Flight controller (ArduPilot)
 
 <img align="right" src="assets/imgs/layer1.jpeg" alt="Layer 1" width="420">
 
-Establish the hardware and software foundation. In simulation, connect a Python MAVLink client to ArduPilot SITL and demonstrate a controlled takeoff, hold, local movement, and landing. On the physical platform, configure optical flow and a rangefinder for indoor state estimation, then validate manual and assisted flight before attempting companion-computer control.
+Establish the hardware and software foundation.
+
+In simulation, connect a Python MAVLink client to ArduPilot SITL and demonstrate a controlled takeoff, hold, local movement, and landing.
+
+On the physical platform, configure optical flow and a rangefinder for indoor state estimation, then validate manual and assisted flight before attempting companion-computer control.
 
 **Milestone:** Repeatable simulated mission, followed by a stable indoor hover and a carefully bounded local movement on the physical aircraft.
 
@@ -52,7 +56,9 @@ Establish the hardware and software foundation. In simulation, connect a Python 
 
 <img align="right" src="assets/imgs/layer2.jpeg" alt="Layer 2" width="420">
 
-Use a downward-facing camera and OpenCV to detect an ArUco marker and estimate its relative pose. Convert target-relative errors into bounded control commands, then evaluate target tracking and landing in simulation before physical trials.
+Use a downward-facing camera and OpenCV to detect an ArUco marker and estimate its relative pose.
+
+Convert target-relative errors into bounded control commands, then evaluate target tracking and landing in simulation before physical trials.
 
 **Milestone:** Documented landing-error measurements on a stationary target, followed by a moving-target experiment if the control behavior is reliable.
 
@@ -62,7 +68,9 @@ Use a downward-facing camera and OpenCV to detect an ArUco marker and estimate i
 
 <img align="right" src="assets/imgs/layer3.jpeg" alt="Layer 3" width="420">
 
-Add forward-facing depth sensing and an explicit mission state machine. When an obstacle is detected in the planned path, pause the landing approach, perform a bounded avoidance maneuver, reacquire the target, and resume only when conditions permit.
+Add forward-facing depth sensing and an explicit mission state machine.
+
+When an obstacle is detected in the planned path, pause the landing approach, perform a bounded avoidance maneuver, reacquire the target, and resume only when conditions permit.
 
 **Milestone:** Demonstrate and measure a repeatable simulated obstacle response before attempting controlled physical tests.
 

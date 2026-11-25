@@ -38,7 +38,7 @@ Establish the hardware and software foundation. In simulation, connect a Python 
 
 **Milestone:** Repeatable simulated mission, followed by a stable indoor hover and a carefully bounded local movement on the physical aircraft.
 
-<img src="assets/imgs/layer1.jpeg" alt="Layer 1" width="100">
+<img src="assets/imgs/layer1.jpeg" alt="Layer 1" width="320">
 
 ### Layer 2 — Visual target tracking and landing
 
@@ -46,7 +46,7 @@ Use a downward-facing camera and OpenCV to detect an ArUco marker and estimate i
 
 **Milestone:** Documented landing-error measurements on a stationary target, followed by a moving-target experiment if the control behavior is reliable.
 
-<img src="assets/imgs/layer2.jpeg" alt="Layer 2" width="100">
+<img src="assets/imgs/layer2.jpeg" alt="Layer 2" width="320">
 
 ### Layer 3 — Obstacle avoidance and mission resumption
 
@@ -54,7 +54,7 @@ Add forward-facing depth sensing and an explicit mission state machine. When an 
 
 **Milestone:** Demonstrate and measure a repeatable simulated obstacle response before attempting controlled physical tests.
 
-<img src="assets/imgs/layer3.jpeg" alt="Layer 3" width="100">
+<img src="assets/imgs/layer3.jpeg" alt="Layer 3" width="320">
 
 A learned object detector in place of fiducial markers is a possible later extension, not a prerequisite for the core project.
 

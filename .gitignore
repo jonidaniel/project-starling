@@ -1,3 +1,6 @@
+# Screenshots / recordings for documentation purposes
+screencaps/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

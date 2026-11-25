@@ -6,6 +6,8 @@ Project Starling is a modular UAV engineering project exploring how an open auto
 
 > **Project status:** Planning. Hardware, configuration, and performance goals below are proposed and will be validated as the project develops.
 
+<br />
+
 ## Goals
 
 - Build an open, inspectable UAV platform around ArduPilot and companion-computer software.
@@ -13,6 +15,8 @@ Project Starling is a modular UAV engineering project exploring how an open auto
 - Detect a visual landing target and guide the aircraft toward it using closed-loop control.
 - Explore reactive obstacle detection and mission resumption as a later extension.
 - Document design decisions, experiments, failures, and measured results in the repository.
+
+<br />
 
 ## System overview
 
@@ -29,6 +33,8 @@ Optical flow + range sensor ──> Flight controller (ArduPilot)
                                       │
                                   ESCs + motors
 ```
+
+<br />
 
 ## Development layers
 
@@ -64,6 +70,8 @@ Add forward-facing depth sensing and an explicit mission state machine. When an 
 
 A learned object detector in place of fiducial markers is a possible later extension, not a prerequisite for the core project.
 
+<br />
+
 ## Proposed hardware
 
 The following is a working bill of materials, subject to compatibility checks and bench testing before purchase or assembly.
@@ -82,6 +90,8 @@ The following is a working bill of materials, subject to compatibility checks an
 
 Component selection, wiring, power budget, payload, and flight time will be verified for the chosen frame and stack before the physical build.
 
+<br />
+
 ## Software and development environment
 
 - **Flight firmware:** ArduPilot (ArduCopter)
@@ -94,6 +104,8 @@ Component selection, wiring, power budget, payload, and flight time will be veri
 - **Depth sensing (Layer 3):** Luxonis DepthAI SDK
 
 The initial development loop is simulation-first: run SITL, connect from a Python script, inspect telemetry in a ground station, and record the behavior before moving to hardware.
+
+<br />
 
 ## Planned milestones
 
@@ -108,6 +120,8 @@ The initial development loop is simulation-first: run SITL, connect from a Pytho
 
 The original planning estimate is twelve weeks. Actual timing will depend on simulation results, component availability, integration work, and safe access to a suitable test space.
 
+<br />
+
 ## Safety approach
 
 This project involves a powerful aircraft and is developed incrementally. Simulation and bench validation come before autonomous flight. Physical tests will use an appropriate controlled area, conservative speed and altitude limits, and a pilot with an independent RC takeover path.
@@ -120,6 +134,8 @@ Before flight testing:
 - Keep props removed during bench work that does not require them.
 - Follow current Finnish and EU UAS requirements and use a suitable test location.
 - Do not treat example parameters or software behavior in project notes as a flight-ready configuration; validate them against the selected hardware and current ArduPilot documentation.
+
+<br />
 
 ## Build log and results
 
@@ -134,9 +150,13 @@ This repository will record the project as it is built:
 
 Performance claims will be added only after they are supported by recorded tests.
 
+<br />
+
 ## License
 
 License to be selected before publishing reusable code or design files.
+
+<br />
 
 ## Acknowledgments
 

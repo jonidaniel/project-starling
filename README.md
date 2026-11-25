@@ -86,8 +86,7 @@ When an obstacle is detected in the planned path, pause the landing approach, pe
 
 <br />
 
-**Milestone:**
-Demonstrate and measure a repeatable simulated obstacle response before attempting controlled physical tests.
+**Milestone:**\Demonstrate and measure a repeatable simulated obstacle response before attempting controlled physical tests.
 
 <br clear="right"/>
 

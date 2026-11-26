@@ -8,8 +8,8 @@
 
 - Cloned ArduPilot.
 
-![ArduPilot clone commands](../media/screenshots/Screenshot 2026-11-26 at 14.43.04.png)
+![ArduPilot clone commands](../media/screenshots/Screenshot%202026-11-26%20at%2014.43.04.png)
 
 - Installed ArduPilot's SITL prerequisites.
 
-![ArduPilot SITL prereq install commands](../media/screenshots/Screenshot 2026-11-26 at 14.52.46.png)
+![ArduPilot SITL prereq install commands](../media/screenshots/Screenshot%202026-11-26%20at%2014.52.46.png)
